@@ -1,0 +1,66 @@
+body {
+    font-family: 'Playfair Display';
+    color: #1a1a1a;
+}
+
+h1,
+h2,
+h3 {
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+}
+
+h2 {
+    color: #5c5c5c;
+}
+
+.extraright {
+    /* visibility: hidden; */
+    margin-right: -0.7rem;
+    opacity: 0%;
+    transition: opacity 0.25s, margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1:hover>.extraright {
+    margin-right: 0rem;
+    opacity: 100%;
+    transition: opacity 0.25s, margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.extraright2 {
+    margin-top: 0;
+    transition: margin-top 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1:hover>.extraright2 {
+    margin-top: 1.3rem
+}
+
+.extraleft {
+    /* visibility: hidden; */
+    margin-top: 1.3rem;
+    margin-right: -7.4rem;
+    opacity: 0%;
+    transition: opacity 0.25s, margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1:hover>.extraleft {
+    margin-right: 1rem;
+    opacity: 100%;
+    transition: opacity 0.25s, margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.extradown {
+    margin-right: -2.7rem;
+    margin-top: 2.8rem;
+    opacity: 0%;
+    text-decoration: overline;
+    transition: transform 0.25s, opacity 0.25s, margin-bottom 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1:hover>.extradown {
+    opacity: 100%;
+    transition: opacity 0.25s, cubic-bezier(0.075, 0.82, 0.165, 1);
+}

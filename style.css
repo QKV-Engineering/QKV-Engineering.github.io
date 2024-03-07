@@ -65,3 +65,8 @@ h1:hover>.extradown {
     opacity: 100%;
     transition: opacity 0.25s, cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.post-tablist {
+    margin: auto;
+    justify-content: center;
+}

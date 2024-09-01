@@ -57,7 +57,7 @@ h1:hover>.extraleft {
     margin-right: -4.7rem;
     margin-top: 3.5rem;
     opacity: 0%;
-    text-decoration: overline;
+    /* text-decoration: overline; */
     transition: transform 0.25s, opacity 0.25s, margin-bottom 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 

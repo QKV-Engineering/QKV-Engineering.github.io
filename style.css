@@ -1,5 +1,5 @@
 body {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     color: #1a1a1a;
     font-size: 140%;
 }
@@ -20,13 +20,17 @@ h2 {
     /* visibility: hidden; */
     margin-right: -1rem;
     opacity: 0%;
-    transition: opacity 0.25s, margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:
+        opacity 0.25s,
+        margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover>.extraright {
+h1:hover > .extraright {
     margin-right: 0rem;
     opacity: 100%;
-    transition: opacity 0.25s, margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:
+        opacity 0.25s,
+        margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .extraright2 {
@@ -34,8 +38,12 @@ h1:hover>.extraright {
     transition: margin-top 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover>.extraright2 {
-    margin-top: 1.3rem
+.qk-text {
+    display: inline-block;
+}
+
+h1:hover > .extraright2 {
+    margin-top: 1.3rem;
 }
 
 .extraleft {
@@ -43,30 +51,61 @@ h1:hover>.extraright2 {
     margin-top: 1.3rem;
     margin-right: -7.4rem;
     opacity: 0%;
-    transition: opacity 0.25s, margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:
+        opacity 0.25s,
+        margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover>.extraleft {
-    margin-right: 0.1em;
+h1:hover > .extraleft {
+    margin-right: 0.4em;
     opacity: 100%;
-    transition: opacity 0.25s, margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:
+        opacity 0.25s,
+        margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 
 .extradown {
     margin-right: -4.7rem;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     opacity: 0%;
-    /* text-decoration: overline; */
-    transition: transform 0.25s, opacity 0.25s, margin-bottom 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-top: 2px solid #1a1a1a;
+    padding-top: 0.2rem;
+    transition:
+        transform 0.25s,
+        opacity 0.25s,
+        margin-bottom 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover>.extradown {
+h1:hover > .extradown {
     opacity: 100%;
-    transition: opacity 0.25s, cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:
+        opacity 0.25s,
+        cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .post-tablist {
     margin: auto;
     justify-content: center;
+}
+
+/* Debug borders - toggle by adding/removing .debug class on body */
+body.debug .extraleft {
+    border: 2px solid red;
+}
+
+body.debug .extradown {
+    border: 2px solid blue;
+    border-top: 2px solid blue;
+}
+
+body.debug .extraright {
+    border: 2px solid green;
+}
+
+body.debug .extraright2 {
+    border: 2px solid orange;
+}
+
+body.debug h1.header {
+    border: 2px dashed purple;
 }

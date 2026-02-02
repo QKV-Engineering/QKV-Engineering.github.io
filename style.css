@@ -2,6 +2,9 @@ body {
     font-family: "Playfair Display";
     color: #1a1a1a;
     font-size: 140%;
+    max-width: 38rem;
+    padding: 2rem;
+    margin: auto;
 }
 
 h1,
@@ -10,6 +13,10 @@ h3 {
     display: flex;
     font-weight: 200;
     justify-content: center;
+}
+
+h1.header {
+    justify-content: flex-start;
 }
 
 h2 {

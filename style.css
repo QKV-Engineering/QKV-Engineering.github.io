@@ -24,7 +24,6 @@ h2 {
 }
 
 .extraright {
-    /* visibility: hidden; */
     margin-right: -1rem;
     opacity: 0%;
     transition:
@@ -32,12 +31,9 @@ h2 {
         margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover > .extraright {
+.animation-wrapper:hover .extraright {
     margin-right: 0rem;
     opacity: 100%;
-    transition:
-        opacity 0.25s,
-        margin-right 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .extraright2 {
@@ -45,16 +41,15 @@ h1:hover > .extraright {
     transition: margin-top 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.animation-wrapper:hover .extraright2 {
+    margin-top: 1.3rem;
+}
+
 .qk-text {
     display: inline-block;
 }
 
-h1:hover > .extraright2 {
-    margin-top: 1.3rem;
-}
-
 .extraleft {
-    /* visibility: hidden; */
     margin-top: 1.3rem;
     margin-right: -7.4rem;
     opacity: 0%;
@@ -63,12 +58,9 @@ h1:hover > .extraright2 {
         margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover > .extraleft {
+.animation-wrapper:hover .extraleft {
     margin-right: 0.4em;
     opacity: 100%;
-    transition:
-        opacity 0.25s,
-        margin-right 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .extradown {
@@ -83,11 +75,13 @@ h1:hover > .extraleft {
         margin-bottom 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-h1:hover > .extradown {
+.animation-wrapper:hover .extradown {
     opacity: 100%;
-    transition:
-        opacity 0.25s,
-        cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.animation-wrapper {
+    width: 100%;
+    position: relative;
 }
 
 .post-tablist {
